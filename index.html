@@ -1,6 +1,44 @@
+<!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>GYSTList</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>G.Y.S.T.List</h1>
+    <div class="empty-state" v-if="!todos.length">
+        <p>Either you've already got all your 💩together, or you want to add your list of s*** to do &#x2193;</p>
+    </div>
+    <form>
+        <label for="Todo">Todo</label><br>
+        <input id="Todo" type="text" placeholder="E.g. Take over the world" /><br><br>
+        <label for="Due by date">Due by date</label><br>
+        <input type="date" /><br><br>
+        <label for="Priority">Priority</label><br>
+        <label for="Low"><input id="Low" type="radio" name="Low-High" value="Low"> Low</label>
+        <label for="High"><input id="High" type="radio" name="Low-High" value="High"> High</label><br><br>
+        <button type="submit">Add</button>
+
+    </form>
+
+    <script src="script.js"></script>
+    <h3> S*** I've got to get done: 2 </h3>
+    <ul>
+        <li> Todo1 <button type="submit">Delete</button>
+            <button type="submit">Done</button> </li>
+        <li> Todo2 <button type="submit">Delete</button>
+            <button type="submit">Done</button></li>
+    </ul>
+
+    <h3> S*** I got together: 0 </h3>
+    <ul>
+        <li> Todone <button type="submit">Delete</button>
+    </ul>
+
+</body>
+
 </html>
