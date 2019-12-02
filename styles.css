@@ -1,6 +1,7 @@
 body {
     background-color: teal;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Pacifico', cursive;
+    color: white;
     }
 
 button {
@@ -21,10 +22,12 @@ form {
     background-color: darkslategray;
     color: white;
     padding: 10px;
+    font-family: 'Roboto', cursive;
     }
 
 .title {
     text-align: center;
+    color: white;
 }
 
 .poo {
